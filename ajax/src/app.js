@@ -9,9 +9,8 @@ $(document).ready(function() {
     $.ajax({
         'url': 'http://localhost:8080/php-ajax-dischi/ajax/src/dischi.php',
         'method': 'GET',
-        'accepts': 'application/json',
+        'dataType': 'json',
         'success': function(data) {
-            console.log(JSON.parse(data));
             // l'API restituisce un array di oggetti perciò uso la dot notation per recuperare i dati effettivi
             // specifico l'array:
             var dischi = data.response;
@@ -70,13 +69,4 @@ $(document).ready(function() {
             })
         }
     })
-
-
-
-
-
-
-
-
-
 })
