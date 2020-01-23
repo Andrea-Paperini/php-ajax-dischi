@@ -7,7 +7,7 @@ $(document).ready(function() {
     // Chiamo ajax per creare il contenuto della pagina
     // utilizzo l'api prendere i dati delle canzoni
     $.ajax({
-        'url': 'dischi.php',
+        'url': 'http://localhost:8080/php-ajax-dischi/ajax/src/dischi.php',
         'method': 'GET',
         'accepts': 'application/json',
         'success': function(data) {

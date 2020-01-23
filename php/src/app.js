@@ -7,7 +7,7 @@ $(document).ready(function() {
     // Chiamo ajax per creare il contenuto della pagina
     // utilizzo l'api prendere i dati delle canzoni
     $.ajax({
-        'url': 'https://flynn.boolean.careers/exercises/api/array/music',
+        'url': 'http://localhost:8080/php-ajax-dischi/php/src/dischi.php',
         'method': 'GET',
         'success': function(data) {
             // l'API restituisce un array di oggetti perciò uso la dot notation per recuperare i dati effettivi

@@ -100,7 +100,7 @@ $(document).ready(function () {
   // utilizzo l'api prendere i dati delle canzoni
 
   $.ajax({
-    'url': 'dischi.php',
+    'url': 'http://localhost:8080/php-ajax-dischi/ajax/src/dischi.php',
     'method': 'GET',
     'accepts': 'application/json',
     'success': function success(data) {
